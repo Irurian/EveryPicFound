@@ -5,9 +5,11 @@ import org.springframework.stereotype.Service;
 import com.everypicfound.storage.api.FileStorageService;
 import com.everypicfound.storage.api.StorageSaveRequest;
 import com.everypicfound.storage.api.StoredFile;
+import com.everypicfound.storage.core.StorageResource;
 
 @Service
 public class LocalFileStorageService implements FileStorageService {
+    
     
     @Override
     public StoredFile save(StorageSaveRequest request) {
@@ -23,4 +25,16 @@ public class LocalFileStorageService implements FileStorageService {
     public String getAccessUrl(String storagePath) {
         throw new UnsupportedOperationException("TODO");
     }
+
+    @Override
+    public StorageResource read(String storagePath) {
+        throw new UnsupportedOperationException("TODO");
+    }
+
+
+    @Override
+    public boolean exists(String storagePath) {
+        throw new UnsupportedOperationException("TODO");
+    }
+
 }

@@ -16,7 +16,9 @@ public enum StorageErrorCode implements ErrorCode {
 
     STORAGE_UNAVAILABLE(300004, "storage unavailable"),
 
-    STORAGE_PATH_INVALID(300005, "file sotrage path invalid");
+    STORAGE_PATH_INVALID(300005, "file sotrage path invalid"),
+                
+    FILE_READ_FAILED(300006, "file read failed");
 
     private final Integer code;
 
