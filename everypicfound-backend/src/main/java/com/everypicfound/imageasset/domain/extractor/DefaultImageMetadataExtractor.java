@@ -1,7 +1,10 @@
 package com.everypicfound.imageasset.domain.extractor;
 
+import org.springframework.stereotype.Component;
+
 import com.everypicfound.imageasset.application.command.ImageUploadCommand;
 
+@Component
 public class DefaultImageMetadataExtractor implements ImageMetadataExtractor {
 
     // 解析图片基础信息。
