@@ -1,5 +1,7 @@
 package com.everypicfound.vectorization.api;
 
+import com.everypicfound.common.exception.ErrorCode;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,7 +17,7 @@ public class VectorizationPublishResult {
 
     private Long imageId;
 
-    private String errorCode;
+    private ErrorCode errorCode;
 
     private String message;
 }
